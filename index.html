@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bilal Abid AI — ask questions and explore ideas.">
+  <title>Bilal Abid AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand"><div class="brand-mark">B</div><div><b>Bilal Abid</b><span>AI ASSISTANT</span></div></div>
+      <button class="new-chat" id="newChat">＋ <span>New chat</span></button>
+      <div class="side-label">YOUR AI ASSISTANT</div>
+      <div class="side-note">Ask questions, learn something new, brainstorm ideas, or get help with everyday tasks.</div>
+      <div class="sidebar-bottom"><div class="online-dot"></div> Ready to help <span class="version">BETA</span></div>
+    </aside>
+    <main class="main">
+      <header><button class="mobile-brand" id="mobileNew">B</button><div class="top-title">Bilal Abid <span>AI</span></div><div class="top-right">Your ideas, answered.</div></header>
+      <section class="chat-area" id="chatArea">
+        <div class="welcome" id="welcome">
+          <div class="hello-icon">B</div>
+          <p class="eyebrow">WELCOME TO BILAL ABID AI</p>
+          <h1>What can I help<br><em>you explore?</em></h1>
+          <p class="sub">Ask a question. Get a clear answer. Keep discovering.</p>
+          <div class="suggestions">
+            <button class="suggestion" data-prompt="Explain artificial intelligence in simple words."><span>✦</span><div><b>Explain a topic</b><small>Make difficult ideas simple</small></div><i>↗</i></button>
+            <button class="suggestion" data-prompt="Give me creative ideas for a new website."><span>✧</span><div><b>Get creative ideas</b><small>Brainstorm something new</small></div><i>↗</i></button>
+            <button class="suggestion" data-prompt="Help me make a study plan for this week."><span>⌁</span><div><b>Learn and study</b><small>Understand and practice</small></div><i>↗</i></button>
+          </div>
+        </div>
+        <div class="messages" id="messages"></div>
+      </section>
+      <footer>
+        <form id="chatForm" class="composer">
+          <textarea id="prompt" rows="1" placeholder="Message Bilal Abid AI..." autocomplete="off"></textarea>
+          <button id="send" type="submit" aria-label="Send message">↑</button>
+        </form>
+        <p class="disclaimer">Bilal Abid AI can make mistakes. Check important information.</p>
+      </footer>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
